@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "audio"
+		},
+		{
+			"path": "venv"
+		},
+		{
+			"path": "../pyothon/A_EP_Audios"
+		},
+		{
+			"path": "../pyothon/A_noEP_Audios"
+		},
+		{
+			"path": "analisis"
+		}
+	],
+	"settings": {}
+}

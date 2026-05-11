@@ -1,0 +1,15 @@
+import opensmile
+
+def extraer_caracteristicas_opensmile(audio_path):
+    smile = opensmile.Smile(
+        config_file="path/a/IS13a.conf"  # Coloca aquí la ruta del preset
+    )
+    features = smile.process_file(audio_path)
+    jitter = features['jitter:local-jitter'].mean()
+    shimmer = features['shimmer:local'].mean()
+    return {
+        'jitter': jitter,
+        'shimmer': shimmer
+    }
+
+# Luego, en tu bucle, simplemente llama a esta función y extrae esas características.
